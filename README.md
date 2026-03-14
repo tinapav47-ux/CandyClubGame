@@ -1,11 +1,9 @@
 # CandyClubGame
-Сладкое 21  — Карточная вечеринка
-
-**Сладкое 21** — это браузерная карточная игра в стиле **Candy Club**.
+**Сладкое 21 ◦ Карточная вечеринка** — это браузерная карточная игра в стиле **Candy Club**.
 
 ---
 
-## 🎮 Описание игры
+##  Описание игры
 
 * Классические правила **21 / Blackjack**
 * Милая **candy-эстетика**: розовые цвета, маршмеллоу, конфеты
@@ -16,7 +14,7 @@
 
 ---
 
-## 🕹️ Как играть
+##  Как играть
 
 1. Каждый игрок получает по две карты.
 2. На своём ходе можно:
@@ -28,14 +26,23 @@
 
 ---
 
-## 👥 Игроки
+##  Игроки
 
 * Максимум **6 игроков** за столом
 * Включает Вас
 
 ---
+##  Скриншоты
 
-## 🧁 Технологии
+![Candy 21 Screenshot](assets/screenshots/candy1.png)
+![Candy 21 Screenshot](assets/screenshots/candy2.png)
+![Candy 21 Screenshot](assets/screenshots/candy3.png)
+![Candy 21 Screenshot](assets/screenshots/candy4.png)
+![Candy 21 Screenshot](assets/screenshots/candy5.png)
+![Candy 21 Screenshot](assets/screenshots/candy6.png)
+---
+
+## Технологии
 
 * **HTML** — структура игры
 * **CSS** — стиль, candy UI
