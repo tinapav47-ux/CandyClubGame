@@ -1,5 +1,7 @@
 # CandyClubGame
 **Сладкое 21 ◦ Карточная вечеринка** — это браузерная карточная игра в стиле **Candy Club**.
+
+Игра доступна по ссылке:
 https://tinapav47-ux.github.io/CandyClubGame/
 ---
 
