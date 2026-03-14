@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍭 Сладкое 21 · Карточная вечеринка</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="main-menu" id="main-menu">
+            <div class="menu-card">
+                <h1 class="game-title">🍬 СЛАДКОЕ 21 🍭</h1>
+                <p class="game-subtitle">Сахарная вечеринка</p>
+                
+                <div class="menu-settings">
+                    <div class="setting-group">
+                        <label>👥 Количество игроков?</label>
+                        <div class="counter-control">
+                            <button class="counter-btn" id="decrease-players">−</button>
+                            <span class="counter-value" id="player-count">6</span>
+                            <button class="counter-btn" id="increase-players">+</button>
+                        </div>
+                        <span class="setting-note">(макс. 6)</span>
+                    </div>
+
+                    <div class="setting-group">
+                        <label>🍭 Твоё имя</label>
+                        <input type="text" id="player-name" class="name-input" value="Сахарный Король" maxlength="20">
+                    </div>
+
+                    <div class="setting-group">
+                        <label>🔊 Громкость</label>
+                        <div class="volume-control">
+                            <input type="range" id="volume-slider" min="0" max="100" value="70">
+                            <span class="volume-value" id="volume-value">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="play-btn" id="start-game-btn">🎮 НАЧАТЬ ИГРУ</button>
+            </div>
+        </div>
+
+        <div class="game-screen" id="game-screen" style="display: none;">
+            <div class="menu-corner">
+                <button class="menu-btn" id="back-to-menu">🍬 МЕНЮ</button>
+            </div>            
+
+            <div class="turn-indicator">
+                <div class="turn-light"></div>
+                <span class="turn-text" id="turn-text">Загрузка...</span>
+            </div>
+
+            <div class="game-table">
+                <div class="table-circle"></div>
+                <div class="center-player" id="center-player"></div>
+                <div class="opponents-circle" id="opponents-circle"></div>
+            </div>
+
+            <div class="action-panel">
+                <button class="action-btn hit" id="hit-btn" disabled>🍬 ЕЩЁ</button>
+                <button class="action-btn stand" id="stand-btn" disabled>🍭 СТОП</button>
+                <button class="action-btn reveal" id="reveal-btn" style="display: none;" disabled>🃏 ОТКРЫТЬ</button>
+                <button class="action-btn restart" id="restart-game-btn" style="display: none;">🔄 ЗАНОВО</button>
+            </div>
+
+            <div class="message-popup" id="game-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+</body>
+</html>
